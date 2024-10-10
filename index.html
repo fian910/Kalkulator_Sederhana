@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Kalkulator JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calc-body">
+          <div class="calc-screen">
+            <div class="calc-operation"></div>
+            <div class="calc-typed">0</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button">C</div>
+            <div class="button inverse">≠</div> 
+            <div class="button">%</div>
+            <div class="button operator">/</div> 
+          </div>
+          <div class="calc-button-row">
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <div class="button operator">x</div> 
+          </div>
+          <div class="calc-button-row">
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+            <div class="button operator">−</div> 
+          </div>
+          <div class="calc-button-row">
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button operator">+</div> 
+          </div>
+          <div class="calc-button-row">
+            <div class="button">.</div>
+            <div class="button">0</div>
+            <div class="button backspace">≪</div> 
+            <div class="button equals">=</div> 
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="history card">
+        <h2>Riwayat Perhitungan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Angka Pertama</th>
+                    <th>Operator</th>
+                    <th>Angka Kedua</th>
+                    <th>Hasil</th>
+                </tr>
+            </thead>
+            <tbody id="historyList"></tbody>
+        </table>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/kalkulator.js"></script> 
+<script src="assets/storage.js"></script>
+</body>
+</html>
